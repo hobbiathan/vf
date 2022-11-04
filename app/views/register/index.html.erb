@@ -1,0 +1,43 @@
+<style>
+  div {
+      width: 200px;
+      height: 100px;
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      margin: auto;
+  }
+
+  p {
+    font-family: Courier;
+  }
+
+}
+</style>
+
+<% flash.each do |type, msg| %>
+      <p style="text-align: center;"><%= msg %></p>
+  <% end %>
+<body>
+  <div>
+    <%= form_with model: user, url: "/register", method: 'POST', local: true do |form| %>
+        <p>
+            <%= form.label :username %><br/>
+            <%= form.text_field :username %><br/><br/>
+            <%= form.label :password %><br/>
+            <%= form.text_field :password %><br/><br/>
+            <%= form.label :confirm %><br/>
+            <%= form.text_field :password_confirmation %><br/><br/>
+            <%= form.label :uniqkey %><br/>
+            <%= form.text_field :uniqkey %><br/><br/>
+            <%= form.label :img %><br/>
+            <%= form.file_field :img %><br/><br/><br/>
+            <%= form.submit "Register" %>
+        </p>
+    </div>
+  </body>
+  <% end %>
