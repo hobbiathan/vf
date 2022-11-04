@@ -1,24 +1,5 @@
-# README
+# Voidflowers
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rewritten with Ruby 3.0.3 and Rails 7.0.4
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Nothing functionally is too different, but the original repository felt like a much greater mess than I wanted to deal with, so I'm just recreating the application.
